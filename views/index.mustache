@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="page">
+	<h1>Welcome</h1>
+	<h3>simply type a letter to guess it</h3>
+	<h4>You have <span class="counter">{{data.guessesLeft}}</span> guesses left</h4>
+
+	<div class="guessStringContainer">
+	    <p class="guessString">{{data.guessString}}</p>
+	</div>
+
+	<h2>Guessed Letters</h2>
+	<div class="guessedLettersContainer">
+	    {{#data.guessedLetters}}
+		<div style="font-size: 2rem;">{{.}}</div>
+	    {{/data.guessedLetters}}
+	</div>
+	<script src="main.js"></script>
+        </div>
+    </body>
+</html>
+ 
