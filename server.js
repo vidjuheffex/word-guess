@@ -3,7 +3,7 @@ const express = require('express');
 const mustacheExpress = require('mustache-express');
 const session = require('express-session');
 const fs = require('fs');
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 var app = express();
 
