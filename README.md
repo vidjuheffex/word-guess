@@ -1,7 +1,7 @@
 # word-guess
 A word guessing game
 
-##Tech stack
+## Tech stack
 - NodeJS
 - Express
 - Mustache
